@@ -1,0 +1,12 @@
+{
+  "name": "orderflow-e2e",
+  "private": true,
+  "description": "Testes E2E do OrderFlow contra a stack do docker compose (http://localhost:8081).",
+  "scripts": {
+    "test": "playwright test",
+    "screenshots": "node capture-screenshots.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0"
+  }
+}
