@@ -1,0 +1,16 @@
+package dev.caiorocha.orderflow.shared;
+
+/** Violação de regra de negócio. O {@code code} é estável e pode ser usado pelo frontend. */
+public class DomainException extends RuntimeException {
+
+    private final String code;
+
+    public DomainException(String code, String message) {
+        super(message);
+        this.code = code;
+    }
+
+    public String code() {
+        return code;
+    }
+}
